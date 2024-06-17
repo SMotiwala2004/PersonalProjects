@@ -6,6 +6,11 @@ let final = document.getElementById("total");
 
 generate.onclick = function() {
     let minValue = Math.ceil(Number(min.value));
-    let maxValue = Math.floor(Number(max.value));
-    final.textContent = Math.round(Math.random() * (maxValue - minValue)) + minValue;
+        let maxValue = Math.floor(Number(max.value));
+    if(minValue < maxValue) {
+        final.textContent = Math.round(Math.random() * (maxValue - minValue)) + minValue;
+    }
+    else {
+        window.alert("The minimum value must be less then the maximum value");
+    }
 }
