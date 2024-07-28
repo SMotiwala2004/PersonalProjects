@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1>TDEE Calculator</h1>
+            </div>
+        </header>
+
+        <div class="credits">
+            <p id="notice">This calculator uses the Mifflin-St Jeor Equation to calculate its output.
+                 The equation it self is source from <a href="https://read.qxmd.com/read/2305711/a-new-predictive-equation-for-resting-energy-expenditure-in-healthy-individuals?redirected=slug">Medscape.com</a>
+                    The equation itself follows different formulas depending on the sex of a person. 
+                    <br>
+                    <br>Male =
+                    (10*weight [kg]) + (6.25*height [cm]) - (5*age [years]) + 5
+                    <br>
+                    <br>Female = (10*weight [kg]) + (6.25*height [cm]) - (5*age [years]) - 161. 
+                    <br>
+                    <br>Further more you can add a scale factor according
+                    to the activity level. Sedentary *1.2, Lightly active *1.375, Moderately active *1.55, Active *1.725, Very active *1.9.
+                 </p>
+        </div>
+
+        <div class="form">
+            <form>
+                <label id="Sex">Enter Sex: <select class="Select-Sex" id="Select-Sex">
+                    <option disabled selected>Select Sex</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                </label>
+                <hr>
+                <label id ="Weight">Enter Weight: <input type="number" id="weight" placeholder="In kg" required></label>
+                <hr>
+                <label id="Height">Enter Height: <input type="number" id="height" placeholder="In CM" required>
+                <hr>
+                <label id="Age">Enter Age: <input type="number" id="age" placeholder="ex. 19" required></label>
+                <hr>
+                <label>Enter Activity: <select required>
+                    <option disabled selected>Select Activity</option>
+                    <option value="Sedentary">Sedentary</option>
+                    <option value="Lightly-Active">Lightly Active</option>
+                    <option value="Moderately-Active">Moderatly Active</option>
+                    <option value="Active">Active</option>
+                    <option value="Very Active">Very Active</option>
+                </select></label>
+                <hr>
+                <label id="Submit">Calculate: <input type="button" id="calculate" value="Calculate"></label>
+            </form>
+        </div>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    font-family: Tahoma, Sans-Serif;
+}
+
+body{ 
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    background: black;
+    height: 150px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+  @media screen and (max-width: 400px) {
+    header {
+        height: 175px;
+        margin-bottom: 25px;
+    }
+  }
+
+
+h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.credits {
+    display: flex;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin-top: 50px;
+    width: 300px;
+    height: 575px;
+    border: 10px solid black;
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 1vw;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    height: 750px;
+    margin-left: 35vw;
+    margin-top: 1vh;
+    padding-top: 5vh;
+    border: 5px solid black;
+    border-radius: 100px;
+    background-color: rgba(43, 43, 105, 0.719);
+}
+
+
+@media screen and (max-width: 700px) {
+    .form {
+        width: 400px;
+        margin-left: 0vw;
+    }
+    hr {
+        width: 400px;
+    }
+  }
+
+label#Sex {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.Select-Sex {
+    width: 100px;
+}
+
+
+hr {
+    color: gray;
+    width: 600px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+label#Weight {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+input#weight {
+    width: 50px;
+}
+
+label#Height {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+input#height {
+    width: 50px;
+}
+label#Age {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+input#age {
+    width: 50px;
+}
+
+input {
+    display: inline;
+    position: relative;
+    justify-content: center;
+}
