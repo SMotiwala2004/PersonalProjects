@@ -44,16 +44,18 @@
                 <hr>
                 <label id="Age">Enter Age: <input type="number" id="age" placeholder="ex. 19" required></label>
                 <hr>
-                <label>Enter Activity: <select required>
+                <label>Enter Activity: <select required id="multiplier">
                     <option disabled selected>Select Activity</option>
                     <option value="Sedentary">Sedentary</option>
                     <option value="Lightly-Active">Lightly Active</option>
                     <option value="Moderately-Active">Moderatly Active</option>
                     <option value="Active">Active</option>
-                    <option value="Very Active">Very Active</option>
+                    <option value="Very-Active">Very Active</option>
                 </select></label>
                 <hr>
                 <label id="Submit">Calculate: <input type="button" id="calculate" value="Calculate"></label>
+                <hr>
+                <p>Calories Burned: </p><label id="kcal-burned">0</label>
             </form>
         </div>
 
