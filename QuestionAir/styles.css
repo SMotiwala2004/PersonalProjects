@@ -1,0 +1,49 @@
+* {
+    font-family: Tahoma;
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    background-image: url('backgroundpic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.Question {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    font-size: 128px;
+    font-weight: bolder;
+    position: absolute;
+    transition: 2000ms ease-in;
+    color: white;
+    -webkit-text-stroke: 5px black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 450px;
+
+}
+
+input {
+    width: 200px;
+    height: 80px;
+    margin-left: 25px;
+    border-radius: 80px;
+    border: 5px solid white;
+    background: linear-gradient(90deg,rgb(134, 10, 83),rgb(83, 0, 83));
+    font-weight: bolder;
+    font-size: 32px;
+}
