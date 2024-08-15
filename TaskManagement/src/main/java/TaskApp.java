@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TaskApp {
     static Scanner sc = new Scanner(System.in);
@@ -19,18 +21,23 @@ public class TaskApp {
             String UserInput = sc.nextLine();
             switch (UserInput){
                 case "1":
+                    //Access AddTaskUI
                     AddTaskUI();
                     break;
                 case "2":
+                    //Access RemoveTaskUI
                     RemoveTaskUI();
                     break;
                 case "3":
+                    //Access ListTaskUI
                     ListTaskMenu();
                     break;
                 case "4":
+                    //AccessStatusUI
                     StatusMenu();
                     break;
                 case "5":
+                    //Exit Program
                     System.out.print("Exiting Program");
                     System.exit(0);
                 default:
@@ -49,7 +56,6 @@ public class TaskApp {
             System.out.println("Enter the task description");
             String taskDesc = sc.nextLine();
             TM.AddTask(taskName, taskDesc);
-            System.out.println("Task has been successfully created");
             System.out.println("\n");
         } else if(UserInput.equals("2")) {
             System.out.println("\n");
@@ -65,6 +71,7 @@ public class TaskApp {
                 "2) Back to Main Menu");
         String UserInput = sc.nextLine();
         if(UserInput.equals("1")) {
+            TM.ListTask();
             System.out.println("Enter the task name you would like to remove");
             String taskName = sc.nextLine();
                 TM.RemoveTask(taskName);
@@ -94,7 +101,6 @@ public class TaskApp {
             System.out.println("Which task would you like to complete?");
             String taskName = sc.nextLine();
             TM.CompleteTask(taskName);
-            System.out.println("Task has been completed\n");
         } else if (UserInput.equals("2")) {
             System.out.println("\n");
             MainMenu();
