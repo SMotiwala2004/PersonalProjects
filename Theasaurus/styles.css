@@ -1,0 +1,41 @@
+* {
+    font-family: Tahoma, sans-serif;
+}
+html {
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+
+#synonyms-text {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#synonyms-word {
+    color: black;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+#gen-syn {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: wheat;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#results {
+    color: white;
+}
+.word-input {
+    display: block;
+}
